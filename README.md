@@ -18,13 +18,13 @@ You can change it at [here](https://github.com/liujiawinds/node-exporter-with-co
 ## tips
 
 1. deregister service
-    curl http://localhost:8500/v1/agent/service/deregister/SERVICEID
+    `curl http://localhost:8500/v1/agent/service/deregister/SERVICEID`
 
 2. query services registed on local agent
-    curl http://localhost:8500/v1/agent/services?pretty
+    `curl http://localhost:8500/v1/agent/services?pretty`
 
 3. query all services in cluster
-    curl http://localhost:8500/v1/catalog/services?pretty
+    `curl http://localhost:8500/v1/catalog/services?pretty`
 
 4. start consul agent as a server role and join a cluster
-    consul agent -server --data-dir=/services/data/consul/ --join CLUSTER_MEMBER_IP&
+    `consul agent -server --data-dir=/services/data/consul/ --join CLUSTER_MEMBER_IP&`
